@@ -1,13 +1,13 @@
 import {Client} from "./client"
 export class Bill{
-   private _index: number;
-   private _indexnews: number;
-   private _money: number;
-   private _client:Client
+    _index: number;
+    _indexnews: number;
+    _money: number;
+    _client:Client
     constructor(index: number, indexnews: number, money: number,Client:Client) {
-        this._money=money;
         this._index=index
         this._indexnews=indexnews
+       this._money=money;
         this._client=Client
     }
     get Index():number{

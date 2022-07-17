@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Bill = void 0;
 var Bill = /** @class */ (function () {
     function Bill(index, indexnews, money, Client) {
-        this._money = money;
         this._index = index;
         this._indexnews = indexnews;
+        this._money = money;
         this._client = Client;
     }
     Object.defineProperty(Bill.prototype, "Index", {

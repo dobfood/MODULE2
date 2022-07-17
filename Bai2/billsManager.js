@@ -28,12 +28,18 @@ var BillsManager = /** @class */ (function () {
     };
     BillsManager.prototype.moneyBill = function (numberHome) {
         var value = this.findtBillByNumberhome(numberHome);
+        // let value= BillsManager.bills.findIndex((item)=>{
+        //     return (item._client._numberhome=numberHome)
+        // })
         if (value === -1) {
             return -1;
         }
         else {
             var moneys = 1;
-            moneys = ((BillsManager.bills[value].Index) - (BillsManager.bills[value].Indexnews)) * 750;
+            // console.log(BillsManager.bills[value]._indexnews);
+            // console.log(BillsManager.bills[value]);
+            console.log(value);
+            moneys = ((BillsManager.bills[value - 1].Indexnews) - (BillsManager.bills[value - 1].Index)) * 750;
             return moneys;
         }
     };

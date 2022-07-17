@@ -4,8 +4,8 @@ export class Client{
     _numberelectric:number
 
     constructor(fullnamme: string, numberhome: number, numberelectric: number) {
-        this._numberhome= numberhome
         this._fullnamme= fullnamme
+        this._numberhome= numberhome
         this._numberelectric= numberelectric;
     }
     get Numberhome():number {

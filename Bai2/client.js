@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Client = void 0;
 var Client = /** @class */ (function () {
     function Client(fullnamme, numberhome, numberelectric) {
-        this._numberhome = numberhome;
         this._fullnamme = fullnamme;
+        this._numberhome = numberhome;
         this._numberelectric = numberelectric;
     }
     Object.defineProperty(Client.prototype, "Numberhome", {
